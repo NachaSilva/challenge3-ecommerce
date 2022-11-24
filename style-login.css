@@ -1,0 +1,51 @@
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #FFFF;
+    --azul-destaque: #2a7ae4;
+    --bg-contacto: #Eaf2fd;
+    --texto-negro: #000000;
+    --blanco: #FFFFFF;
+    --grisform: #D9D9D9;
+
+  }
+
+
+.formulario{
+background-color: var(--blanco);
+margin: -6rem auto 0 auto;
+width: 40%;
+padding: 4rem;
+}
+.campo{
+display: flex;
+margin-bottom: 2rem;
+gap: 2rem;
+}
+
+.campo__field{
+    /*distender el campo del formulario con flex*/
+flex: 1;
+border: 1px solid var(--grisform);
+height: 2rem;
+border-radius: 10px;
+}
+.campo__field--textarea{
+    height: 20rem;
+}
+
+ .boton--primario{
+    background-color: var(--azul-destaque);
+    border: none;
+    color: var(--texto-destaque);
+    height: 40px;
+    width: 100px;
+ }
+
+ .centrar-texto{
+    text-align: center;
+    font-size: 32px;
+      font-weight: bold;
+ }
+  

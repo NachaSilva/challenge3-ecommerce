@@ -1,0 +1,19 @@
+{
+  "name": "challenge-ecommerce",
+  "version": "1.0.0",
+  "description": "challenge4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NachaSilva/challenge3-ecommerce.git"
+  },
+  "author": "Ignacia Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NachaSilva/challenge3-ecommerce/issues"
+  },
+  "homepage": "https://github.com/NachaSilva/challenge3-ecommerce#readme"
+}

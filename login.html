@@ -1,30 +1,54 @@
-    <link rel="stylesheet" href="reset.css">
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <title>NS Geek</title>
+</head>
 <body>
     <header>
-    <div class="cabecera_container">
-        <img class="cabecera_logo" src="./assets/logo.svg" alt="AluraGeek logo">
-        <div class="busqueda">
-            <form action=""></form>
-            <input type="search" class="busqueda_campo" placeholder="¿Qué deseas buscar?" name="search">
-            <button class="button-busqueda"><img src="./assets/lupa.png" alt="Icono Lupa"></button>
-        </div>
-        <a href="login.html"><button class="login">Login</button> </a>
-        <button class="button-busqueda-login"><img src="./assets/lupa-negro.png" alt="Icono Lupa"></button> 
-    </div>
+        <nav>
+            <div class="logo-busqueda">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="assets\logo.png" alt="logo"> 
+                    <p class="logo-azul">NS</p><p>Geek</p> 
+                </a>
+                </div>
+
+                <input i type="text" placeholder="Qué deseas buscar?">
+            </div>
+        </nav>
     </header>
-    <div class="container-login">
-        
-        <form class="form-control">
-            <h2>Iniciar Sesión</h2>
-            <input type="text" name="usuario" placeholder="Escriba su correo electrónico">
-            <input type="password" name="clave" placeholder="Escriba su contraseña">
-            <button type="submit" name="entrar">Entrar</button>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Iniciar Sesión</h3>
+        <div class="destaque"></div>
+        <form action="index.html" class="formulario">
+            <div class="campo">
+
+                    <input class="campo__field" type="email" placeholder="Ingresa tu correo" id="nombre">
+                 </div>
+
+            <div class="campo">
+                    <input class="campo__field" type="password" placeholder="Contraseña" id="email">    
+            </div>
+
+            <div class="campo">
+                
+                <button class="boton--primario" type="submit">Iniciar</button>
+                
+            </div> 
+  
         </form>
-    </div>
-</body>
+
+       
+    </main>
+        
+        
+    </html>

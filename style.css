@@ -194,6 +194,11 @@ nav{
       margin-bottom: 50px; /*despegar cada sección*/
     }
 
+    .seccion-productos img{
+      width: 150px;
+      height: 150px;
+    }
+
 /*--------------------Form Contacto--------------------*/
 
 .contacto{
