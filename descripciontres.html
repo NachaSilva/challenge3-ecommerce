@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="./css/descripcion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
@@ -20,33 +20,42 @@
                     <p class="logo-azul">NS</p><p>Geek</p> 
                 </a>
                 
-
                 <input i type="text" placeholder="Qué deseas buscar?">
+            </div>
+
+            <div class="login">
+                    <a href="login.html"><button type="submit">Login</button></a>
             </div>
         </nav>
     </header>
+
+    <br>
     <main class="contenedor">
-        <h3 class="centrar-texto">Iniciar Sesión</h3>
-        <div class="destaque"></div>
-        <form action="index.html" class="formulario" data-form>
-            <div class="campo">
+        <h1 class="titulo_producto">Yoda Collection</h1>
+        <br>
+        <div class="producto_general">
+            <img class="producto__imagen" src="./assets/yodaproducto.jpg" alt="Imagen del producto">
 
-                    <input class="campo__field" type="email" placeholder="Ingresa tu correo" id="nombre" data-email>
-                 </div>
+            <div class="producto__contenido">
+                
+                <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel congue dui. Sed sit amet vulputate
+                    nisi, a molestie dolor. Fusce efficitur vestibulum dui sed maximus. Aliquam eleifend commodo lorem
+                    pharetra sagittis. Donec mattis tortor id sagittis cursus. Aliquam scelerisque nibh id risus cursus
+                    imperdiet.</p>
 
-            <div class="campo">
-                    <input class="campo__field" type="password" placeholder="Contraseña" id="email" data-password>    
+                <form class="formulario_producto" data-form>
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Color --</option>
+                        <option>Blanco</option>
+                        <option>Negro</option>
+                    </select>
+                    <input class="formulario__cantidad" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
             </div>
-
-            <div class="campo">
-                
-                <button class="boton--primario" type="submit">Iniciar</button>
-                
-            </div> 
-  
-        </form>       
+        </div>
     </main>
-    <br><br><br><br>
+    <br><br>
     <section class="contacto">
         <div class="referencia">
             <img src="assets\logo.png" alt="logo">
@@ -73,11 +82,13 @@
             <button>Enviar Mensaje</button>
         </div>
 </section> 
+<script type="module" src="./js/alert.js"></script>
+</body>
 
-    <script type="module" src="/controllers/login-controller.js"></script>
+<footer class="footer">
+<p class="footer-text">❋ María Ignacia Silva - Challenge 4 ❋ </p>
+</footer>
+
+
     </body>
-    <footer class="footer">
-        <p class="footer-text">❋ María Ignacia Silva - Challenge 4 ❋ </p>
-    </footer>
-        
     </html>

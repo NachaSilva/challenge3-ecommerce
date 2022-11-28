@@ -24,6 +24,9 @@ const render = async () =>{
         listaProductos.forEach(elemento => {
             producto.appendChild(nuevoProducto(elemento.name, elemento.price, elemento.imageUrl))
         });
+
+
+
     }
     catch(error){
         console.log(error);

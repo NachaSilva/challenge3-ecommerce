@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="./css/productos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
@@ -14,18 +16,85 @@
     <header>
         <nav>
             <div class="logo-busqueda">
-                <div class="logo">
-                    <img src="assets\logo.png" alt="logo">
-                    <p class="logo-azul">NS</p><p>Geek</p>
-                </div>
+                <a href="index.html" class="logo">
+                    <img src="assets\logo.png" alt="logo"> 
+                    <p class="logo-azul">NS</p><p>Geek</p> 
+                </a>
+                
 
                 <input i type="text" placeholder="Qué deseas buscar?">
             </div>
-
-            <div class="login">
-                    <a href="login.html"><button type="submit">Login</button></a>
-            </div>
         </nav>
     </header>
-        
-    </html>  
+    <main class="contenedor">
+        <h3 class="centrar-texto">Nuevo Producto</h3>
+        <div class="destaque"></div>
+        <form class="formulario" data-form>
+
+            <select class="campo_selection">
+                <option disabled selected>-- Selecciona Item --</option>
+                <option>Star Wars</option>
+                <option>Consolas</option>
+                <option>Diversos</option>
+            </select>
+
+            <div class="campo">
+
+                    <input class="campo__field" type="text" placeholder="Url de imagen" id="imageUrl">
+                 </div>
+
+            <div class="campo">
+                    <input class="campo__field" type="text" placeholder="Nombre del producto" id="name">    
+            </div>
+
+            <div class="campo">
+                <input class="campo__field" type="number" placeholder="Precio del producto" id="price">    
+        </div>
+        <div class="campo">
+            <input class="campo__field" type="text" placeholder="Descripción del producto" id="description">    
+    </div>
+
+
+            <div class="campo">
+
+                <button type="submit" class="button">Agregar Producto</button>
+            </div> 
+  
+        </form>
+
+        <section class="contacto">
+            <div class="referencia">
+                <img src="assets\logo.png" alt="logo">
+                <p>NS</p><p>Geek</p>
+            </div>
+    
+            <div class="links-utiles">
+                <a href="">Quienes somos</a> <br>
+                <a href="">Política de Privacidad</a> <br>
+                <a href="">Programa de fidelidad</a> <br>
+                <a href="">Nuetras Tiendas</a> <br>
+                <a href="">Quiero ser franquiciado</a> <br>
+                <a href="">Anuncie aqui</a>
+            </div>
+    
+            <div class="form">
+                <p>Habla con nosotros</p>
+                    <div class="label-float">
+                      <input type="text" name="Nome" id="Nome" class="input-nombre" placeholder="Nombre">
+                      
+                    </div>
+                
+                    <textarea name="mensagem" id="msg" cols="5" rows="5"></textarea>
+                <button>Enviar Mensaje</button>
+            </div>
+    </section> 
+    
+
+    </main>
+    <script type="module" src="./controllers/productos.js"></script>
+</body>
+<footer class="footer">
+    <p class="footer-text">❋ María Ignacia Silva - Challenge 4 ❋ </p>
+</footer>
+
+    </html>

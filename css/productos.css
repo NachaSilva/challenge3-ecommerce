@@ -24,6 +24,14 @@ margin-bottom: 2rem;
 gap: 2rem;
 }
 
+.campo_selection{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 0.6rem;
+    }
+
+
 .campo__field{
     /*distender el campo del formulario con flex*/
 flex: 1;
@@ -33,16 +41,20 @@ border-radius: 10px;
 }
 .campo__field--textarea{
     height: 20rem;
-    
 }
 
- .boton--primario{
-    background-color: var(--azul-destaque);
-    border: none;
-    color: var(--texto-destaque);
+ .button{
+  background: none;
+  border: 1px solid var(--azul-destaque);
+  text-transform: uppercase;
     height: 40px;
-    width: 100px;
+    width: 200px;
  }
+
+ .button:hover{
+  background-color: var(--azul-destaque);
+  color: var(--texto-destaque);
+}
 
  .centrar-texto{
     text-align: center;
@@ -56,3 +68,8 @@ border-radius: 10px;
     text-decoration: none;
     color: #000000;
   }
+ 
+  ::placeholder{
+    color: red;
+  }
+  

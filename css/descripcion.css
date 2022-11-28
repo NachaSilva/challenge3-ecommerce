@@ -1,0 +1,97 @@
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #FFFF;
+    --azul-destaque: #2a7ae4;
+    --bg-contacto: #Eaf2fd;
+    --texto-negro: #000000;
+    --grisplaceholder: #9E9D9D;
+    --blanco: #FFFFFF;
+  }
+
+
+@media(max-width:768px){
+ .producto__imagen{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .titulo_producto{
+        text-align: center;
+    }
+    .form{
+        margin-bottom: 40px;
+        margin-top: -30px;
+    }
+   
+}
+
+
+@media (min-width: 769px) {
+    .producto_general {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+
+.formulario_producto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+    
+}
+
+.parrafo{
+    padding-top: 100px;
+}
+
+.formulario__campo {
+    /** es lo mismo pero mas rapido **/
+    background-color: transparent;
+    color: var(--grisplaceholder);
+    padding: 1rem;
+    
+}
+.formulario__cantidad{
+    background-color: transparent;
+}
+
+.formulario__submit {
+    padding: 1.5rem;
+    transition: .3s ease;
+    grid-column: 1 / 3;
+    background: var(--blanco);
+     border: 1px solid var(--azul-destaque);
+     text-transform: uppercase;
+
+}
+
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--azul-destaque);
+       color: var(--texto-destaque);
+    
+}
+
+.titulo_producto{
+    text-align: center;
+    font-family: 'Relaway', sans-serif;
+ 
+}
+
+.producto_imagen{
+    width: 1000px;
+    margin-right: 10px;
+}
+
+.producto__imagen_storm{
+    width: 700px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+}

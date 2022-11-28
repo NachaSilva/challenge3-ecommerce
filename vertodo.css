@@ -1,0 +1,79 @@
+.destaque_productos{
+    height: 352px;
+    background-image: url(assets/bannerproductos.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 32px;
+ }
+ 
+     .banner_productos{
+       
+       width: 750px;
+       height: 250px;
+       padding-left: 50px;
+       display: flex;
+       flex-direction: column;
+       justify-content: end;
+     }
+ 
+     .banner_productos h1{
+        color: var(--texto-destaque);
+        font-size: 60px;
+        font-weight: bold;
+     }
+
+     /*--------------------Sección de productos--------------------*/
+
+.geral-prods{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  
+  /*-----------------Divs en la Sección de Productos-------------*/
+  
+      .prod-titulo{   
+            
+           display: flex;
+           justify-content: space-between;
+      }
+  
+      .prod-titulo .titulo{
+        font-size: 32px;
+        font-weight: bold;
+  
+      }
+  
+      .login_producto{
+       
+         display: flex;
+         justify-content: end;
+      }
+  
+      .login_producto button{
+       width: 180px;
+       height: 50px;
+       background: none;
+       border: 1px solid var(--azul-destaque);
+       text-transform: uppercase;
+       margin-bottom: 35px;
+      }
+
+      .login_producto button:hover{
+        background-color: var(--azul-destaque);
+        color: var(--texto-destaque);
+     }
+  
+      .seccion-productos{
+        height: 310px;
+        width: 60vw;
+        display: flex;
+        justify-content: space-between; /*para dar espacio entre elementos*/
+        margin-bottom: 50px; /*despegar cada sección*/
+      }
+  
+      .seccion-productos img{
+        width: 150px;
+        height: 150px;
+      }
